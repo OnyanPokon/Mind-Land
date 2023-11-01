@@ -8,6 +8,5 @@ Aplikasi "MindLand" adalah sebuah platform inovatif yang dirancang khusus untuk 
 1. klon repositori ini dengan `git clone https://github.com/OnyanPokon/Mind-Land.git`
 2. jalankan command `npm install` pada terminal
 3. jalankan command `npm run dev` pada terminal
-3. buka browser `http://localhost:5173`
-
+4. buka browser `http://localhost:5173`
 
