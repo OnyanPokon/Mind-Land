@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mind-Land 🧠
 ## apa itu Mind-Land?
 Aplikasi "MindLand" adalah sebuah platform inovatif yang dirancang khusus untuk memberikan dukungan dan sumber daya kepada individu yang menghadapi gangguan mental. Aplikasi ini bertujuan untuk menciptakan komunitas yang inklusif dan mendukung 🤝, di mana pengguna dapat berinteraksi, berbagi pengalaman, dan mengakses informasi yang berguna untuk memahami dan mengatasi gangguan mental. 
@@ -10,3 +11,8 @@ Aplikasi "MindLand" adalah sebuah platform inovatif yang dirancang khusus untuk 
 3. jalankan command `npm run dev` pada terminal
 4. buka browser `http://localhost:5173`
 
+=======
+# Mind-Land
+aplikasi kesehatan mental
+Malik
+>>>>>>> eb248674e2551301f5399e7e0bddc611392364a1
