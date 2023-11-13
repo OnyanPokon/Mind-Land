@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-# Mind-Land
-aplikasi kesehatan mental
-
-#SIBXDicoding
-=======
 # Mind-Land 🧠
 ## apa itu Mind-Land?
 Aplikasi "MindLand" adalah sebuah platform inovatif yang dirancang khusus untuk memberikan dukungan dan sumber daya kepada individu yang menghadapi gangguan mental. Aplikasi ini bertujuan untuk menciptakan komunitas yang inklusif dan mendukung 🤝, di mana pengguna dapat berinteraksi, berbagi pengalaman, dan mengakses informasi yang berguna untuk memahami dan mengatasi gangguan mental. 
@@ -17,4 +11,3 @@ Aplikasi "MindLand" adalah sebuah platform inovatif yang dirancang khusus untuk 
 4. buka browser `http://localhost:5173`
 
 
->>>>>>> 87c8efa97ae2b8980869c975ed445990308f6a7c
