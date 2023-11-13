@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import {Navbar, Container, Nav } from "react-bootstrap";
+import {Navbar, Container, Nav, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 // eslint-disable-next-line react-refresh/only-export-components
@@ -47,7 +47,7 @@ const NavbarComponent = () => {
     <div>
        <Navbar expand="lg" className={changeColor ? "color-active" : ""}>
       <Container>
-        <Navbar.Brand href="#home" className="fs-3 fw-bold">Mind Land</Navbar.Brand>
+        <Navbar.Brand href="#home" className="fs-3 fw-bold text-primary">Mind Land</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto text-center">
@@ -65,9 +65,8 @@ const NavbarComponent = () => {
           </Nav>
 
           <div className="text-center">
-            <button className="btn btn-outline-danger rounded-1">
-              SignUp
-            </button>
+          <Button variant="primary" size="sm">SignUp</Button>{' '}
+          <Button variant="primary" size="sm">LogIn</Button>{' '}
           </div>
         </Navbar.Collapse>
       </Container>

@@ -8,7 +8,7 @@ import DetailArticles from './pages/Article/DetailArticles'
 import About from './pages/About/About'
 import Doctor from './pages/Doctor/Doctor'
 
-// import FooterComponent from './components/FooterComponent';
+import FooterComponent from './components/FooterComponent';
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
       <Route path="Doctor" Component={Doctor}/>
     </Routes>
 
-    {/* <FooterComponent/> */}
+    <FooterComponent/>
   </div>
 }
 
