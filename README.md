@@ -1,4 +1,6 @@
+
 # Mind-Land 🧠
+
 ## apa itu Mind-Land?
 Aplikasi "MindLand" adalah sebuah platform inovatif yang dirancang khusus untuk memberikan dukungan dan sumber daya kepada individu yang menghadapi gangguan mental. Aplikasi ini bertujuan untuk menciptakan komunitas yang inklusif dan mendukung 🤝, di mana pengguna dapat berinteraksi, berbagi pengalaman, dan mengakses informasi yang berguna untuk memahami dan mengatasi gangguan mental. 
 

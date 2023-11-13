@@ -1,0 +1,80 @@
+/* landing page  */
+.hero-section{
+  background: rgb(255,255,255);
+  background: linear-gradient(131deg, rgba(255,255,255,1) 21%, rgba(126,232,250,1) 68%, rgba(238,192,198,1) 100%);
+
+  
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+.hero-row{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+
+.hero-col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-col img{
+  width: 15rem;
+}
+
+
+
+
+.headline-col{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.headline-col h1{
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 24px;
+}
+.headline-col .headline p{
+  color: var(--textcolor);
+  font-size: 16px;
+}
+
+
+
+.services p{
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 16px;
+}
+
+@media (min-width: 768px){
+  .hero-col img{
+    width: 18rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .hero-col img{
+    width: 24rem;
+  }
+  .headline-col h1{
+    font-size: 40px;
+  }
+  .headline-col .headline p{
+    font-size: 24px;
+  }
+
+  .services p{
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 24px;
+  }
+}
+
+
+
