@@ -10,3 +10,4 @@ Aplikasi "MindLand" adalah sebuah platform inovatif yang dirancang khusus untuk 
 3. jalankan command `npm run dev` pada terminal
 4. buka browser `http://localhost:5173`
 
+
