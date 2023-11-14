@@ -30,13 +30,13 @@ function Login() {
   };
 
   return (
-    <Container>
-      <div className="wrapper-logo d-flex flex-column align-items-center mt-5">
+    <div className="Container">
+      <div className="wrapper-logo d-flex flex-column align-items-center">
         <img className="text-secondary" src="../public/logo.png" alt="Logo" width="46" height="auto" />
         <h1 className="fs-2">Log in to your account</h1>
         <p>Please enter your details.</p>
       </div>
-      <Form className="form d-flex flex-column mt-3 mx-auto" style={{ maxWidth: '400px' }} onSubmit={handleSubmit}>
+      <Form className="form d-flex flex-column mt-3 mx-auto" style={{ width: '100%', maxWidth: '400px' }} onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control
@@ -67,7 +67,7 @@ function Login() {
           Continue with Google
         </Button>
       </Form>
-    </Container>
+    </div>
   );
 }
 

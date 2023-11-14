@@ -39,8 +39,8 @@ function Register() {
   };
 
   return (
-    <Container>
-      <div className="wrapper-logo d-flex flex-column align-items-center mt-5">
+    <div className="Container">
+      <div className="wrapper-logo d-flex flex-column align-items-center">
         <img className="text-secondary" src="../public/logo.png" alt="Logo" width="46" height="auto" />
         <h1 className="fs-2">Register for an account</h1>
         <p>Please enter your details.</p>
@@ -91,7 +91,7 @@ function Register() {
           Continue with Google
         </Button>
       </Form>
-    </Container>
+    </div> 
   );
 }
 
