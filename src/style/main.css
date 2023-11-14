@@ -24,7 +24,7 @@
 .NavLogo {
     margin-right: 10px;
   }
-  
+
 .navbar.color-active {
     background-color: var(--navbar-color);
     padding: 10px 0 10px 0;

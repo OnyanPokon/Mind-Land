@@ -18,7 +18,6 @@ const HomePage = () => {
             <h1 className="mb-4">Solution<br /> <span>Mind Land</span> <br /> For Mental Healt.</h1>
             <button className="btn btn-outline-danger btn-xs rounded-1 me-2 mb-xs-0 mb-2">  Check Now!  </button>
             <p className="mb-4">Psychologist chat, stress testing, emergency call, discussion, health and articles.</p>
-            
             <div className="services">
             <h5 className="fw-bold">Our Services</h5>
             <button className="btn btn-primary btn-lg rounded-1 me-2 mb-xs-0 mb-2">AI Chat</button>
