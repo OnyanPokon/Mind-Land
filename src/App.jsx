@@ -1,12 +1,14 @@
-import Landing from './pages/Landing'
+import Register from './pages/Auth/Register';
+import Login from './pages/Auth/Login'
 
 function App() {
 
   return (
    <>
-    <Landing />
+    {/* <Login /> */}
+    <Register />
    </>
   )
 }
 
-export default App
+export default App;
