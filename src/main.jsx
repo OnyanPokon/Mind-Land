@@ -6,7 +6,6 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/main.css'
 import 'animate.css';
-import '../src/style/CustomSass.scss'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
