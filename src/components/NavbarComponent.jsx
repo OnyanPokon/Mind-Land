@@ -1,5 +1,5 @@
-import {useState, useEffect} from "react";
-import {Navbar, Container, Nav, Button } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import logo from '../assets/img/logo.png';
@@ -13,7 +13,7 @@ const NavbarComponent = () => {
   const changeBackgroundColor = () => {
     if (window.scrollY > 10) {
       setChangeColor(true);
-    } else{
+    } else {
       setChangeColor(false);
     }
   };
@@ -61,7 +61,7 @@ const NavbarComponent = () => {
         </Container>
     </Navbar>
     </div>
-  )
-}
+  );
+};
 
-export default NavbarComponent
+export default NavbarComponent;
