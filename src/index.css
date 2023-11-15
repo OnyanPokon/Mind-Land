@@ -1,0 +1,12 @@
+:root{
+  --primary: #30B4F5; 
+  --success: #70B524; 
+  --info: #909CFE; 
+  --warning: #FFBE01;
+  --danger: #FF5034;
+  --textcolor: #093576;
+}
+
+*{
+  font-family: 'Inter', sans-serif;
+}
