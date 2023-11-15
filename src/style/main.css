@@ -271,11 +271,7 @@ a:hover{
 
 }
 .homepage .articles .row:nth-child(2) img{
-    height: 250px;
-}
-
-.homepage .articles .row:nth-child(2) i{
-    color: gold;
+    height: 50%;
 }
 
 .homepage .articles .row:nth-child(2) h5{
