@@ -1,55 +1,74 @@
-import ArticleImage1 from "../assets/img/article/mobile.png";
-import ArticleImage2 from "../assets/img/article/mobile.png";
-import ArticleImage3 from "../assets/img/article/mobile.png";
-import ArticleImage4 from "../assets/img/article/mobile.png";
-
 export const ArticleTerbaru = [
   {
     id: 1,
-    image: ArticleImage1,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star-half-stroke",
-    title: "Apa Itu Manipulasi? Ini Ciri dan Cara Tepat Mengatasinya",
-    btn: "Baca selengkapnya",
+    title: "Sering merasa pusing? mungkin saja kamu sedang",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, expedita!",
+    btn: "Selengkapnya",
     delay: "",
   },
   {
     id: 2,
-    image: ArticleImage2,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star",
-    title: "Apa Itu Manipulasi? Ini Ciri dan Cara Tepat Mengatasinya",
-    btn: "Baca selengkapnya",
+    title: "Ini dia pertanda kamu mengalami gangguan kecemasan",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, expedita!",
+    btn: "Selengkapnya",
     delay: "200",
   },
   {
     id: 3,
-    image: ArticleImage3,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star",
-    title: "Apa Itu Manipulasi? Ini Ciri dan Cara Tepat Mengatasinya",
-    btn: "Baca selengkapnya",
+    title: "Fakta air putih, bisa membuat kamu lebih rileks",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, expedita!",
+    btn: "Selengkapnya",
     delay: "400",
   },
   {
     id: 4,
-    image: ArticleImage4,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star",
-    title: "Apa Itu Manipulasi? Ini Ciri dan Cara Tepat Mengatasinya",
-    btn: "Baca selengkapnya",
-    delay: "",
+    title: "Fakta air putih, bisa membuat kamu lebih rileks",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, expedita!",
+    btn: "Selengkapnya",
+    delay: "400",
   },
-];
+]
+
+export const navLinks = [
+  {
+    id: 1,
+    path: "",
+    text: "Beranda",
+  },
+  {
+    id: 2,
+    path: "artikel",
+    text: "Artikel",
+  },
+  {
+    id: 3,
+    path: "dokter",
+    text: "Dokter",
+  },
+  {
+    id: 4,
+    path: "tentang",
+    text: "Tentang",
+  },
+]
+

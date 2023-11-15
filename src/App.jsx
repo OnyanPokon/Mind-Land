@@ -4,7 +4,7 @@ import NavbarComponent from './components/NavbarComponent';
 
 import Landing from './pages/Landing';
 import Article from './pages/Article/Articles';
-import DetailArticles from './pages/Article/DetailArticles'
+import DetailArticle from './pages/Article/DetailArticle'
 import About from './pages/About/About'
 import Doctor from './pages/Doctor/Doctor'
 
@@ -17,10 +17,10 @@ function App() {
 
     <Routes>
       <Route path="/" Component={Landing}/>
-      <Route path="Articles" Component={Article}/>
-      <Route path="DetailArticle" Component={DetailArticles}/>
-      <Route path="About" Component={About}/>
-      <Route path="Doctor" Component={Doctor}/>
+      <Route path="artikel" Component={Article}/>
+      <Route path="detailArtikel" Component={DetailArticle}/>
+      <Route path="tentang" Component={About}/>
+      <Route path="dokter" Component={Doctor}/>
     </Routes>
 
     <FooterComponent/>
