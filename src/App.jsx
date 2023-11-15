@@ -1,3 +1,5 @@
+import Register from './pages/Auth/Register';
+import Login from './pages/Auth/Login'
 import { Routes, Route } from "react-router-dom";
 
 import NavbarComponent from "./components/NavbarComponent";
@@ -21,8 +23,7 @@ function App() {
         <Route path="/article" Component={DetailArticle} />
         <Route path="/about" Component={About} />
         <Route path="/doctor" Component={Doctor} />
-      </Routes>
-
+          
       <FooterComponent />
     </div>
   );
