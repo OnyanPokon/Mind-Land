@@ -3,6 +3,7 @@ import HeroImage from "../assets/img/hero.png";
 import { ArticleTerbaru } from "../data/index";
 import { BsChevronRight } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import FaqComponent from "../components/FaqComponent";
 
 const HomePage = () => {
   let naviget = useNavigate();
@@ -85,6 +86,10 @@ const HomePage = () => {
           </Row>
         </Container>
       </div>
+
+      {/* Faq Section */}
+      <FaqComponent />
+      {/* Faq Section */}
     </div>
   );
 };
