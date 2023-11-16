@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
+import { BsGoogle } from "react-icons/bs";
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -30,18 +31,18 @@ function Login() {
   };
 
   return (
-    <div className="Container">
-      <div className="wrapper-logo d-flex flex-column align-items-center">
+    <div className="auth-wrapper "> 
+      <div className="wrapper-logo d-flex flex-column align-items-center gap-2">
         <img className="text-secondary" src="../public/logo.png" alt="Logo" width="46" height="auto" />
-        <h1 className="fs-2">Log in to your account</h1>
-        <p>Please enter your details.</p>
+        <h1 className="fs-2">Masuk ke akun kamu</h1>
+        <p>masukan email dan password</p>
       </div>
       <Form className="form d-flex flex-column mt-3 mx-auto" style={{ width: '100%', maxWidth: '400px' }} onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Alamat Email</Form.Label>
           <Form.Control
             type="email"
-            placeholder="Enter email"
+            placeholder="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -60,11 +61,11 @@ function Login() {
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Remember Me" />
         </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
+        <Button variant="info" className='text-light' type="submit">
+          Masuk
         </Button>
-        <Button variant="outline-primary" onClick={handleGoogleLogin} className="mt-3">
-          Continue with Google
+        <Button variant="outline-info" onClick={handleGoogleLogin} className="mt-3">
+           Masuk dengan Google <BsGoogle />
         </Button>
       </Form>
     </div>

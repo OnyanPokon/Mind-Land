@@ -19,11 +19,11 @@
     animation: fadeInDown;
     animation-duration: 2s;
     z-index: 9999;
-    background-color: white;
+    background-color: transparent;
 }
   
 .navbar.color-active {
-    background-color: var(--navbar-color);
+    background-color: white;
     padding: 10px 0 10px 0;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
     align-items: center;
@@ -64,7 +64,7 @@ section.hero-section{
     font-weight: 600;
     color: var(--textcolor);
     animation: fadeInUp;
-    animation-duration: 2s;
+    animation-duration: 1s;
     --animate-delay: 0.6s;
 }
 
@@ -135,7 +135,9 @@ section.hero-section{
     .homepage .header-box img{
         width: 300px;
     }
-
+    .navbar{
+        background-color: white;
+    }
 }
 
 @media screen and (max-width: 375px){ 
@@ -162,6 +164,8 @@ section.hero-section{
 .footer{
     width: 100%;
     min-height: 60vh;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
 }
 
 .footer .row:nth-child(1) .col:nth-child(1) h3{
@@ -237,10 +241,11 @@ a:hover{
 /* styl articles */
 section.articles{
     min-height: 100vh;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .homepage .articles .row:nth-child(1){
-    padding-top: 100px;
 }
 
 .homepage .articles .row:nth-child(1) h1,
@@ -286,3 +291,14 @@ section.articles{
     padding-top: 100px;
 } */
 /* styl articles */
+
+/* login page  */
+.auth-wrapper {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}  

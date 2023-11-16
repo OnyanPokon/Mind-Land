@@ -23,6 +23,9 @@ function App() {
         <Route path="/article" Component={DetailArticle} />
         <Route path="/about" Component={About} />
         <Route path="/doctor" Component={Doctor} />
+        <Route path="/login" Component={Login} />
+        <Route path="/register" Component={Register} />
+      </Routes>
           
       <FooterComponent />
     </div>

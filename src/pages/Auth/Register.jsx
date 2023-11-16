@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Button, Form } from 'react-bootstrap';
+import { BsGoogle } from "react-icons/bs";
 
 function Register() {
   const [username, setUsername] = useState('');
@@ -39,27 +40,27 @@ function Register() {
   };
 
   return (
-    <div className="Container">
-      <div className="wrapper-logo d-flex flex-column align-items-center">
+    <div className="auth-wrapper">
+      <div className="wrapper-logo d-flex flex-column align-items-center gap-2">
         <img className="text-secondary" src="../public/logo.png" alt="Logo" width="46" height="auto" />
-        <h1 className="fs-2">Register for an account</h1>
-        <p>Please enter your details.</p>
+        <h1 className="fs-2 text-center">Daftar atau buat akun baru</h1>
+        <p>Isi form dengan lengkap</p>
       </div>
       <Form className="form d-flex flex-column mt-3 mx-auto" style={{ width: '100%', maxWidth: '400px' }} onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicUsername">
           <Form.Label>Username</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter username"
+            placeholder="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Alamat email</Form.Label>
           <Form.Control
             type="email"
-            placeholder="Enter email"
+            placeholder="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -75,20 +76,20 @@ function Register() {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
-          <Form.Label>Confirm Password</Form.Label>
+          <Form.Label>Konfirmasi Password</Form.Label>
           <Form.Control
             type="password"
-            placeholder="Confirm Password"
+            placeholder="Konfirmasi password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
+        <Button variant="info" type="submit" className='text-light'>
+          Daftar
         </Button>
-        <Button variant="outline-primary" onClick={handleGoogleLogin} className="mt-3">
-          Continue with Google
+        <Button variant="outline-info" onClick={handleGoogleLogin} className="mt-3">
+          Lanjutkan dengan <BsGoogle />
         </Button>
       </Form>
     </div> 

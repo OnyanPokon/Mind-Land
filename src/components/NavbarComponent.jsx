@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from '../assets/img/logo.png';
 import { navLinks } from "../data";
 
 // eslint-disable-next-line react-refresh/only-export-components
 
 const NavbarComponent = () => {
+  let naviget = useNavigate();
+
   const [changeColor, setChangeColor] = useState(false);
 
   const changeBackgroundColor = () => {
@@ -28,7 +30,7 @@ const NavbarComponent = () => {
     <div>
        <Navbar expand="lg" className={changeColor ? "color-active" : ""} fixed="top">
         <Container>
-            <Navbar.Brand href="#home" className="fs-3 fw-bold text-primary">
+            <Navbar.Brand href="/" className="fs-3 fw-bold text-primary">
               <img
                 src={logo}
                 alt="Mind Land Logo"
@@ -54,8 +56,8 @@ const NavbarComponent = () => {
             </Nav>
 
             <div className="text-center">
-            <Button variant="outline-info" size="sm">Masuk</Button>{' '}
-            <Button variant="info" className="text-light" size="sm">Daftar <BsArrowRight/></Button>{' '}
+            <Button variant="outline-info" size="sm" onClick={() => naviget("/login")}>Masuk</Button>{' '}
+            <Button variant="info" className="text-light" size="sm" onClick={() => naviget("/register")}>Daftar <BsArrowRight/></Button>{' '}
             </div>
           </Navbar.Collapse>
         </Container>

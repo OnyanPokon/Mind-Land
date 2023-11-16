@@ -33,7 +33,7 @@ const HomePage = () => {
           </Row>
         </Container>
       </section>
-      <section className="articles w-100 min-vh-100 pb-5">
+      <section className="articles w-100 min-vh-100">
         <Container>
           <Row className="pb-4">
             <Col>
