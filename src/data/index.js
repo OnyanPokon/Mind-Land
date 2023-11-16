@@ -1,7 +1,7 @@
-import ArticleImage1 from "../assets/img/article/mobile.png";
-import ArticleImage2 from "../assets/img/article/mobile.png";
-import ArticleImage3 from "../assets/img/article/mobile.png";
-import ArticleImage4 from "../assets/img/article/mobile.png";
+import ArticleImage1 from "../assets/img/article/news1.jpeg";
+import ArticleImage2 from "../assets/img/article/news2.jpeg";
+import ArticleImage3 from "../assets/img/article/news3.jpeg";
+import ArticleImage4 from "../assets/img/article/news4.jpeg";
 
 export const ArticleTerbaru = [
   {
