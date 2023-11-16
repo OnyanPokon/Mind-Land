@@ -1,91 +1,97 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
 
 :root {
-    --primary: #30B4F5; 
-    --success: #70B524; 
-    --info: #909CFE; 
-    --warning: #FFBE01;
-    --danger: #FF5034;
-    --textcolor: #093576;
-
-    --navbar-color: #eef5ff;
+    --primary-color: #f6f8fd;
+    --secondary-color: #00AEEF;
+    --color-text: #231942;
+    --navbar-color: #E7F1FF;
+    --navbar-color-text: #000000;
 }
 
 /* style Navbar */
 
 .navbar{
+    position: fixed;
     width: 100%;
     padding: 10px 0 10px 0;
     transition: background-color 0.2s ease, color 0.2s ease;
     animation: fadeInDown;
     animation-duration: 2s;
     z-index: 9999;
-    background-color: white;
 }
-  
+.NavLogo {
+    margin-right: 10px;
+  }
+
 .navbar.color-active {
     background-color: var(--navbar-color);
     padding: 10px 0 10px 0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     align-items: center;
     flex-shrink: 0;
 }
 
 .navbar .nav-link a{
     padding: 5px 10px 5pc 10px;
+    font-weight: 500;
     text-decoration: none;
-    color: var(--textcolor);
+    color: var(--navbar-color-text);
+
 }
 
 .navbar .nav-link a:hover{
-    color: var(--primary)
+    color: var(--secondary-color)
 }
 
 .navbar .nav-link .active{
-    color: var(--primary);
+    color: var(--secondary-color);
 }
 
+.navbar .nav-link .active:hover{
+    color: var(--navbar-color);
+}
 
 /* end navbar */
 
 /* style HomePage Landing*/
-section.hero-section{
-    background: rgb(255,255,255);
-    background: linear-gradient(131deg, rgba(255,255,255,1) 21%, rgba(126,232,250,1) 68%, rgba(238,192,198,1) 100%);
 
-    font-family: 'poppins', sans-serif;
-}
 
-.homepage .header-box{
-    padding-top: 4rem;
+header {
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+
+
 }
 
 .homepage .header-box h1{
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     font-weight: 600;
-    color: var(--textcolor);
+    color: var(--color-text);
     animation: fadeInUp;
     animation-duration: 2s;
     --animate-delay: 0.6s;
 }
 
 .homepage .header-box h5{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--textcolor);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-text);
     animation: fadeInUp;
     animation-duration: 2s;
     --animate-delay: 1.4s;
 }
 
 .homepage .header-box h1 span{
-    font-size: 3.2rem;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--secondary-color);
 }
 
 .homepage .header-box p{
     line-height: 2;
-    color: var(--textcolor);
+    color: var(--color-text);
     font-weight: 500;
     animation: fadeInUp;
     animation-duration: 2s;
@@ -98,17 +104,17 @@ section.hero-section{
     --animate-delay: 1.4s;
 }
 .homepage .header-box img{
-    width: 32rem;
+    width: 100%;
     animation: fadeInUp; 
     animation-duration: 2s;
 }
-
 
 @media screen and (max-width: 992px){ 
     .homepage .header-box{
         padding-top: 8rem;
 
     }
+
     .homepage .header-box img{
         width: 400px;
         display: block;
@@ -235,12 +241,15 @@ a:hover{
 /* style footer */
 
 /* styl articles */
-section.articles{
-    min-height: 100vh;
+
+.homepage .articles{
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
 }
 
 .homepage .articles .row:nth-child(1){
-    padding-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 .homepage .articles .row:nth-child(1) h1,
@@ -248,41 +257,30 @@ section.articles{
     color: var(--color-text);
 }
 
-.homepage .articles .row:nth-child(2) i{
-    color: gold;
-}
-
-/* .homepage .articles .row:nth-child(2){
+.homepage .articles .row:nth-child(2){
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    gap: 15px;
     padding-inline:10px ;
 
 }
 
 .homepage .articles .row:nth-child(2) .col{
     background-color: white;
-    border-radius: 1rem;
-    padding: 1rem;
-    cursor: pointer;
-    transition: box-shadow ease-in-out 0.5s;
-}
-.homepage .articles .row:nth-child(2) .col:hover{
-    box-shadow: 2px 20px 63px 3px rgba(48,180,245,0.15);
-}
+    padding: 0;
 
-.homepage .articles .row:nth-child(2) i{
-    color: gold;
+}
+.homepage .articles .row:nth-child(2) img{
+    height: 50%;
 }
 
 .homepage .articles .row:nth-child(2) h5{
-    font-size: large;
-    color: var(--color-text);
-    font-weight: 600;
+    color: var(--secondary-color);
+    font-weight: bold;
     line-height: 1.5;
 }
 
 .homepage .articles .row:nth-child(3){
     padding-top: 100px;
-} */
+}
 /* styl articles */

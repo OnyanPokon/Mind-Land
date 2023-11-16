@@ -1,42 +1,52 @@
-import React, { useState } from 'react';
-import { Container, Form, Button } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Container, Form, Button } from "react-bootstrap";
 
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!email.includes('@')) {
+    if (!email.includes("@")) {
       alert('Email harus mengandung karakter "@"');
       return;
     }
 
-    if (password === '') {
-      alert('Password is required');
+    if (password === "") {
+      alert("Password is required");
       return;
     }
 
-    console.log('Formulir dikirim:', { email, password });
+    console.log("Formulir dikirim:", { email, password });
 
-    setEmail('');
-    setPassword('');
+    setEmail("");
+    setPassword("");
   };
 
   const handleGoogleLogin = () => {
     // Handle Google login Nanti Disini
-    alert('Continue with Google clicked');
+    alert("Continue with Google clicked");
   };
 
   return (
     <div className="Container">
       <div className="wrapper-logo d-flex flex-column align-items-center">
-        <img className="text-secondary" src="../public/logo.png" alt="Logo" width="46" height="auto" />
+        <img
+          className="text-secondary"
+          src="../public/logo.png"
+          alt="Logo"
+          width="46"
+          height="auto"
+        />
         <h1 className="fs-2">Log in to your account</h1>
         <p>Please enter your details.</p>
       </div>
-      <Form className="form d-flex flex-column mt-3 mx-auto" style={{ width: '100%', maxWidth: '400px' }} onSubmit={handleSubmit}>
+      <Form
+        className="form d-flex flex-column mt-3 mx-auto"
+        style={{ width: "100%", maxWidth: "400px" }}
+        onSubmit={handleSubmit}
+      >
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control
@@ -63,7 +73,11 @@ function Login() {
         <Button variant="primary" type="submit">
           Submit
         </Button>
-        <Button variant="outline-primary" onClick={handleGoogleLogin} className="mt-3">
+        <Button
+          variant="outline-primary"
+          onClick={handleGoogleLogin}
+          className="mt-3"
+        >
           Continue with Google
         </Button>
       </Form>
