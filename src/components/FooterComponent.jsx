@@ -10,13 +10,9 @@ import {
 
 const FooterComponent = () => {
   return (
-    <div className="footer py-5">
+    <div className="footer">
       <Container>
-        <Row
-          className="d-flex justify-content-between"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
+        <Row className="d-flex justify-content-between">
           <Col lg="5">
             <h3 className="fw-bold">Mind Land</h3>
             <p className="desc">

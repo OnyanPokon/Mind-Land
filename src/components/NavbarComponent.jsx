@@ -1,34 +1,15 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../assets/img/logo.png";
+import { navLinks } from "../data";
 
 // eslint-disable-next-line react-refresh/only-export-components
-export const navLinks = [
-  {
-    id: 1,
-    path: "",
-    text: "Home",
-  },
-  {
-    id: 2,
-    path: "Articles",
-    text: "Articles",
-  },
-  {
-    id: 3,
-    path: "Doctor",
-    text: "Doctor",
-  },
-  {
-    id: 4,
-    path: "About",
-    text: "About",
-  },
-];
 
 const NavbarComponent = () => {
+  let naviget = useNavigate();
+
   const [changeColor, setChangeColor] = useState(false);
 
   const changeBackgroundColor = () => {
@@ -47,9 +28,13 @@ const NavbarComponent = () => {
 
   return (
     <div>
-      <Navbar expand="lg" className={changeColor ? "color-active" : ""}>
+      <Navbar
+        expand="lg"
+        className={changeColor ? "color-active" : ""}
+        fixed="top"
+      >
         <Container>
-          <Navbar.Brand href="#home" className="fs-3 fw-bold text-primary">
+          <Navbar.Brand href="/" className="fs-3 fw-bold text-primary">
             <img
               src={logo}
               alt="Mind Land Logo"
@@ -57,7 +42,6 @@ const NavbarComponent = () => {
               height="40"
               className="NavLogo"
             />
-            {" Mind Land"}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -80,11 +64,20 @@ const NavbarComponent = () => {
             </Nav>
 
             <div className="text-center">
-              <Button variant="outline-dark" size="sm">
-                LogIn
+              <Button
+                variant="outline-info"
+                size="sm"
+                onClick={() => naviget("/login")}
+              >
+                Masuk
               </Button>{" "}
-              <Button variant="primary" size="sm">
-                SignUp <BsArrowRight />
+              <Button
+                variant="info"
+                className="text-light"
+                size="sm"
+                onClick={() => naviget("/register")}
+              >
+                Daftar <BsArrowRight />
               </Button>{" "}
             </div>
           </Navbar.Collapse>
