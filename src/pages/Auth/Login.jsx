@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Form, Button } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import { BsGoogle } from "react-icons/bs";
 
 function Login() {
@@ -80,6 +80,13 @@ function Login() {
           className="mt-3"
         >
           Masuk dengan Google <BsGoogle />
+        </Button>
+        <Button
+          variant="info"
+          onClick={handleGoogleLogin}
+          className="mt-5 text-light"
+        >
+          Daftar
         </Button>
       </Form>
     </div>

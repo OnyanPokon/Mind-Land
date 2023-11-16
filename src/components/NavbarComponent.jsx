@@ -65,19 +65,11 @@ const NavbarComponent = () => {
 
             <div className="text-center">
               <Button
-                variant="outline-info"
+                variant="outline-dark"
                 size="sm"
                 onClick={() => naviget("/login")}
               >
-                Masuk
-              </Button>{" "}
-              <Button
-                variant="info"
-                className="text-light"
-                size="sm"
-                onClick={() => naviget("/register")}
-              >
-                Daftar <BsArrowRight />
+                Masuk <BsArrowRight />
               </Button>{" "}
             </div>
           </Navbar.Collapse>

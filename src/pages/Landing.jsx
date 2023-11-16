@@ -30,8 +30,8 @@ const HomePage = () => {
 
               <div className="services">
                 <h5 className="">Layanan Kami</h5>
-                <span className="services-badge">
-                  <Badge bg="info" className="me-2 mb-xs-0 mb-2">
+                <span className="services-badge ">
+                  <Badge bg="info" className="me-2 mb-xs-0 mb-2 ">
                     AI Chat
                   </Badge>
                 </span>
@@ -72,7 +72,7 @@ const HomePage = () => {
           >
             {ArticleTerbaru.map((kelas) => {
               return (
-                <Col key={kelas.id}>
+                <Col key={kelas.id} data-aos="fade-up">
                   <Card className="h-100">
                     <Card.Img
                       variant="top"
@@ -83,18 +83,11 @@ const HomePage = () => {
                       className="article-card-image"
                     />
                     <Card.Body>
-                      <div className="mb-3">
-                        <i className={kelas.star1}></i>
-                        <i className={kelas.star2}></i>
-                        <i className={kelas.star3}></i>
-                        <i className={kelas.star4}></i>
-                        <i className={kelas.star5}></i>
-                      </div>
                       <Card.Title className="">{kelas.title}</Card.Title>
                       <Card.Text>{kelas.text}</Card.Text>
                     </Card.Body>
-                    <Card.Footer className="p-3">
-                      <Card.Link href="">{kelas.btn}</Card.Link>
+                    <Card.Footer className="p-3 text-center">
+                      <Button className="btn btn-light">Selengkapnya..</Button>
                     </Card.Footer>
                   </Card>
                 </Col>
