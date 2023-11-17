@@ -1,6 +1,7 @@
 import {Container, Row, Col} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { BsWhatsapp, BsEnvelope, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs";
+import '../style/component-style/footer.css'
 
 const FooterComponent = () => {
   return (
