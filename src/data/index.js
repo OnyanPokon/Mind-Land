@@ -22,7 +22,7 @@ export const ArticleTerbaru = [
   },
   {
     id: 4,
-    title: "Fakta air putih, bisa membuat kamu lebih rileks",
+    title: "Malik hengker pro",
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, expedita!",
     btn: "Selengkapnya",
     delay: "400",
