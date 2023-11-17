@@ -54,7 +54,7 @@ const HomePage = () => {
         </Container>
       </section>
       <section className="articles w-100 min-vh-100">
-        <Container>
+        <Container className="Articles">
           <Row className="pb-4">
             <Col>
               <h1 className="text-center fw-bold">Artikel Terbaru</h1>
