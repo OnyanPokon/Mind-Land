@@ -3,6 +3,8 @@ import HeroImage from "../assets/img/hero.png";
 import {ArticleTerbaru} from "../data/index"
 import { BsChevronRight } from "react-icons/bs";
 import {useNavigate} from "react-router-dom"
+import '../style/landing.css'
+import CardComponent from "../components/CardComponent";
 
 
 
@@ -37,34 +39,14 @@ const HomePage = () => {
         <Container>
           <Row className="pb-4">
             <Col>
-              <h1 className="text-center fw-bold">Artikel Terbaru</h1>
+              <h2 className="text-center fw-bold">Artikel Terbaru</h2>
               <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
             </Col>
           </Row>
           <Row xs={1} md={2} lg={4} className="g-4 d-flex justify-content-start p-4">
             {ArticleTerbaru.map((kelas) => {
               return(
-                <Col key={kelas.id}>
-                  <Card className="h-100"> 
-                    <Card.Img variant="top"  src={`https://source.unsplash.com/random/${300}x${200 + kelas.id}/?mental_health`} alt="unsplash.com" className="article-card-image"/>
-                    <Card.Body>
-                      <div className="mb-3">
-                        <i className={kelas.star1}></i>
-                        <i className={kelas.star2}></i>
-                        <i className={kelas.star3}></i>
-                        <i className={kelas.star4}></i>
-                        <i className={kelas.star5}></i>
-                      </div>
-                      <Card.Title className="">{kelas.title}</Card.Title>
-                      <Card.Text>
-                        {kelas.text}
-                      </Card.Text>
-                    </Card.Body>
-                    <Card.Footer className="p-3">
-                      <Card.Link href="">{kelas.btn}</Card.Link>
-                    </Card.Footer>
-                  </Card>
-                </Col>
+                  <CardComponent key={kelas.id} data={kelas}></CardComponent>
                 );
               })}
           </Row>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import { BsGoogle } from "react-icons/bs";
+import '../../style/auth.css'
 
 function Login() {
   const [email, setEmail] = useState('');

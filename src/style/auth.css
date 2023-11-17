@@ -1,0 +1,27 @@
+.auth-wrapper {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  padding-inline: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+} 
+
+
+@media screen and (max-width: 992px){ 
+
+}
+
+@media screen and (max-width: 575px){ 
+ 
+}
+
+@media screen and (max-width: 475px){ 
+  
+}
+
+@media screen and (max-width: 375px){ 
+ 
+
+}
