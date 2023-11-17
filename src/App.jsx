@@ -1,14 +1,15 @@
-import Register from './pages/Auth/Register';
-import Login from './pages/Auth/Login'
+import Register from "./pages/Auth/Register";
+import Login from "./pages/Auth/Login";
 import { Routes, Route } from "react-router-dom";
 
 import NavbarComponent from "./components/NavbarComponent";
 
-import Landing from './pages/Landing';
-import Articles from './pages/Article/Articles';
-import DetailArticle from './pages/Article/DetailArticle'
-import About from './pages/About/About'
-import Doctor from './pages/Doctor/Doctor'
+import Landing from "./pages/Landing";
+import Article from "./pages/Article/Articles";
+import DetailArticle from "./pages/Article/DetailArticle";
+import About from "./pages/About/About";
+import Doctor from "./pages/Doctor/Doctor";
+import FaqComponent from "./components/FaqComponent";
 
 import FooterComponent from "./components/FooterComponent";
 
@@ -25,8 +26,9 @@ function App() {
         <Route path="/doctor" Component={Doctor} />
         <Route path="/login" Component={Login} />
         <Route path="/register" Component={Register} />
+        <Route path="/faq" Component={FaqComponent} />
       </Routes>
-          
+
       <FooterComponent />
     </div>
   );

@@ -24,10 +24,8 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "node-sass": "^9.0.0",
     "react-bootstrap": "^2.9.1",
     "react-router-dom": "^6.18.0",
-    "sass": "^1.69.5",
     "vite": "^4.4.5"
   },
   "description": "Aplikasi \"MindLand\" adalah sebuah platform inovatif yang dirancang khusus untuk memberikan dukungan dan sumber daya kepada individu yang menghadapi gangguan mental. Aplikasi ini bertujuan untuk menciptakan komunitas yang inklusif dan mendukung 🤝, di mana pengguna dapat berinteraksi, berbagi pengalaman, dan mengakses informasi yang berguna untuk memahami dan mengatasi gangguan mental.",

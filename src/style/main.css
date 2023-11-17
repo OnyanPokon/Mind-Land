@@ -27,11 +27,47 @@ h1, h2, h3, h4, h5, p{
 
 
 
+.homepage .header-box h1{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--textcolor);
+    animation: fadeInUp;
+    animation-duration: 3s;
+    --animate-delay: 1s;
+}
+
+.homepage .header-box h5{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--textcolor);
+    animation: fadeInUp;
+    animation-duration: 3s;
+    --animate-delay: 1s;
+}
 
 
+.homepage .header-box p{
+    line-height: 2;
+    color: var(--textcolor);
+    font-weight: 500;
+    animation: fadeInUp;
+    animation-duration: 3s;
+    --animate-delay: 1s;
+}
 
+.homepage .header-box button{
+    animation: fadeInUp;
+    animation-duration: 3s;
+    --animate-delay: 1s;
+}
+.homepage .header-box img{
+    width: 32rem;
+    animation: fadeInUp; 
+    animation-duration: 2s;
+}
 
 /* style Navbar */
+
 
 
 
@@ -57,39 +93,45 @@ h1, h2, h3, h4, h5, p{
 /* styl articles */
 
 
-/* .homepage .articles .row:nth-child(2){
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    padding-inline:10px ;
-
-}
-
-.homepage .articles .row:nth-child(2) .col{
-    background-color: white;
-    border-radius: 1rem;
-    padding: 1rem;
-    cursor: pointer;
-    transition: box-shadow ease-in-out 0.5s;
-}
-.homepage .articles .row:nth-child(2) .col:hover{
-    box-shadow: 2px 20px 63px 3px rgba(48,180,245,0.15);
-}
-
-.homepage .articles .row:nth-child(2) i{
-    color: gold;
-}
-
-.homepage .articles .row:nth-child(2) h5{
-    font-size: large;
-    color: var(--color-text);
-    font-weight: 600;
-    line-height: 1.5;
-}
-
-.homepage .articles .row:nth-child(3){
-    padding-top: 100px;
-} */
 /* styl articles */
 
 /* login page  */
+.auth-wrapper {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+} 
+
+/* Style Faq */
+
+.faq{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.faq h2{
+    color: var(--color-text);
+
+}
+
+.faq .accordion .accordion-button{
+    color: var(--color-text);
+    font-weight: bold;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+.faq .accordion .accordion-button:focus{
+    border: none;
+    box-shadow: none;
+}
+
+.faq .accordion .accordion-body{
+    background-color: #fff;
+}
+/* Style Faq */
+
