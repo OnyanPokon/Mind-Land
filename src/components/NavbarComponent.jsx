@@ -4,6 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import { navLinks } from "../data";
+import '../style/component-style/navbar.css'
 
 // eslint-disable-next-line react-refresh/only-export-components
 

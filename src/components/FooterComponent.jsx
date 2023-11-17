@@ -7,6 +7,7 @@ import {
   BsLinkedin,
   BsGithub,
 } from "react-icons/bs";
+import '../style/component-style/footer.css'
 
 const FooterComponent = () => {
   return (

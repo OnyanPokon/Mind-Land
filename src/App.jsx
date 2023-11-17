@@ -20,7 +20,7 @@ function App() {
 
       <Routes>
         <Route path="/" Component={Landing} />
-        <Route path="/articles" Component={Article} />
+        <Route path="/articles" Component={Articles} />
         <Route path="/article" Component={DetailArticle} />
         <Route path="/about" Component={About} />
         <Route path="/doctor" Component={Doctor} />

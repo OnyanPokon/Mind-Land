@@ -2,8 +2,11 @@ import { Container, Row, Col, Button, Badge, Card } from "react-bootstrap";
 import HeroImage from "../assets/img/hero.png";
 import { ArticleTerbaru } from "../data/index";
 import { BsChevronRight } from "react-icons/bs";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom"
+import '../style/landing.css'
+import CardComponent from "../components/CardComponent";
 import FaqComponent from "../components/FaqComponent";
+
 
 const HomePage = () => {
   let naviget = useNavigate();
@@ -57,11 +60,8 @@ const HomePage = () => {
         <Container className="Articles">
           <Row className="pb-4">
             <Col>
-              <h1 className="text-center fw-bold">Artikel Terbaru</h1>
-              <p className="text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus, nulla.
-              </p>
+              <h2 className="text-center fw-bold">Artikel Terbaru</h2>
+              <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
             </Col>
           </Row>
           <Row
@@ -71,28 +71,10 @@ const HomePage = () => {
             className="g-4 d-flex justify-content-start p-4"
           >
             {ArticleTerbaru.map((kelas) => {
-              return (
-                <Col key={kelas.id} data-aos="fade-up">
-                  <Card className="h-100">
-                    <Card.Img
-                      variant="top"
-                      src={`https://source.unsplash.com/random/${300}x${
-                        200 + kelas.id
-                      }/?mental_health`}
-                      alt="unsplash.com"
-                      className="article-card-image"
-                    />
-                    <Card.Body>
-                      <Card.Title className="">{kelas.title}</Card.Title>
-                      <Card.Text>{kelas.text}</Card.Text>
-                    </Card.Body>
-                    <Card.Footer className="p-3 text-center">
-                      <Button className="btn btn-light">Selengkapnya..</Button>
-                    </Card.Footer>
-                  </Card>
-                </Col>
-              );
-            })}
+              return(
+                  <CardComponent key={kelas.id} data={kelas}></CardComponent>
+                );
+              })}
           </Row>
           <Row className="mt-5">
             <Col className="d-flex justify-content-center">
