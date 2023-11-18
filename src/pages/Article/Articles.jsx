@@ -26,7 +26,6 @@ const Articles = () => {
                 </Button>
               </InputGroup>
             </Col>
-            
           </Row>
         </Container>
       </section>

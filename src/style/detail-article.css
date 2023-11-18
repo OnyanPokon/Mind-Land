@@ -1,0 +1,9 @@
+section.herodetail-section{
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+section.herodetail-section h1{
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary);
+  font-weight: bold;
+}
