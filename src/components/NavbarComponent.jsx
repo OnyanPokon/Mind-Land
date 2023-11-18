@@ -66,9 +66,10 @@ const NavbarComponent = () => {
 
             <div className="text-center">
               <Button
-                variant="outline-dark"
-                size="sm"
+                variant="info"
+                size="md"
                 onClick={() => naviget("/login")}
+                className="text-light"
               >
                 Masuk <BsArrowRight />
               </Button>{" "}

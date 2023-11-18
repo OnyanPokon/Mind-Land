@@ -1,6 +1,6 @@
 import { Container, Row, Col, Accordion } from "react-bootstrap";
-
 import { faq } from "../data/index";
+import '../style/component-style/faq.css'
 
 const FaqComponent = () => {
   return (

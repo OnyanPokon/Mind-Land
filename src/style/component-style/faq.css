@@ -1,0 +1,18 @@
+.faq{
+  padding-block: 8rem;
+}
+
+.faq .accordion .accordion-button{
+  color: var(--color-text);
+  font-weight: bold;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+.faq .accordion .accordion-body{
+  background-color: #fff;
+}
+
+.accordion:active{
+  box-shadow: 2px 4px 29px 3px rgba(48,180,245,0.29);
+}
