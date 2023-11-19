@@ -5,7 +5,7 @@ export const ArticleTerbaru = [
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, expedita!",
     btn: "Selengkapnya",
     delay: "",
-    url: '/'
+    url: '/article'
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const ArticleTerbaru = [
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, expedita!",
     btn: "Selengkapnya",
     delay: "200",
-    url: '/'
+    url: '/article'
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const ArticleTerbaru = [
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, expedita!",
     btn: "Selengkapnya",
     delay: "400",
-    url: '/'
+    url: '/article'
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const ArticleTerbaru = [
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, expedita!",
     btn: "Selengkapnya",
     delay: "400",
-    url: '/'
+    url: '/article'
   },
 ]
 
