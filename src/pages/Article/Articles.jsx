@@ -26,7 +26,6 @@ const Articles = () => {
                 </Button>
               </InputGroup>
             </Col>
-            
           </Row>
         </Container>
       </section>
@@ -62,7 +61,7 @@ const Articles = () => {
           <Row className='px-3' xs={1} md={2} lg={4}>
             {ArticleTerbaru.map((kelas) => {
               return(
-                  <CardComponent key={kelas.id} data={kelas}></CardComponent>
+                  <CardComponent key={kelas.id} data={kelas} ></CardComponent>
                 );
               })}
           </Row>
