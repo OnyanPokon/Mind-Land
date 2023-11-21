@@ -2,11 +2,10 @@ import { Container, Row, Col, Button, Badge, Card } from "react-bootstrap";
 import HeroImage from "../assets/img/hero.png";
 import { ArticleTerbaru } from "../data/index";
 import { BsChevronRight } from "react-icons/bs";
-import {useNavigate} from "react-router-dom"
-import '../style/landing.css'
+import { useNavigate } from "react-router-dom";
+import "../style/landing.css";
 import CardComponent from "../components/CardComponent";
 import FaqComponent from "../components/FaqComponent";
-
 
 const HomePage = () => {
   let naviget = useNavigate();
@@ -22,7 +21,11 @@ const HomePage = () => {
                 <br />
                 Solusi Kesehatan Mental Kamu.
               </h1>
-              <Button variant="info" className="mb-4 btn-md text-light">
+              <Button
+                variant="info"
+                className="mb-4 btn-md text-light "
+                onClick={() => naviget("/CheckNow")}
+              >
                 {" "}
                 Cari Tahu Sekarang !{" "}
               </Button>
@@ -61,7 +64,10 @@ const HomePage = () => {
           <Row className="pb-4">
             <Col>
               <h2 className="text-center fw-bold">Artikel Terbaru</h2>
-              <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+              <p className="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus, nulla.
+              </p>
             </Col>
           </Row>
           <Row
@@ -71,10 +77,10 @@ const HomePage = () => {
             className="g-4 d-flex justify-content-start p-4"
           >
             {ArticleTerbaru.map((kelas) => {
-              return(
-                  <CardComponent key={kelas.id} data={kelas}></CardComponent>
-                );
-              })}
+              return (
+                <CardComponent key={kelas.id} data={kelas}></CardComponent>
+              );
+            })}
           </Row>
           <Row className="mt-5">
             <Col className="d-flex justify-content-center">

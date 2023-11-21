@@ -10,6 +10,7 @@ import DetailArticle from "./pages/Article/DetailArticle";
 import About from "./pages/About/About";
 import Doctor from "./pages/Doctor/Doctor";
 import FaqComponent from "./components/FaqComponent";
+import CheckNow from "./pages/CheckNow/CheckNow";
 
 import FooterComponent from "./components/FooterComponent";
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/login" Component={Login} />
         <Route path="/register" Component={Register} />
         <Route path="/faq" Component={FaqComponent} />
+        <Route path="/checknow" Component={CheckNow} />
       </Routes>
 
       <FooterComponent />
