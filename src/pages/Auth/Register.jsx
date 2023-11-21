@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Button, Form } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 
 function Register() {
   const [username, setUsername] = useState('');
