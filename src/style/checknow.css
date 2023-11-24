@@ -1,95 +1,154 @@
 section.checknow-section{
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-  }
-  
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
 section.checknow-section .row h1{
-    font-family: 'poppins', sans-serif;
-    font-weight: bold;
-    font-size: 16px;;
-    color: #093576;
-  }
+  font-family: 'poppins', sans-serif;
+  font-weight: bold;
+  font-size: 16px;;
+  color: #093576;
+}
 
-  section .checknow-card{
-    display: flex;
-    box-shadow: 5px 5px 5px hsl(0, 0%, 0% 10%);
-    margin: 10px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 12px;
-    box-shadow: 0px 4px 11.9px 0px rgba(0, 0, 0, 0.10);
-    width: 97px;
-    height: 137px;
- }
+section .checknow-card{
+  display: flex;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 0% 10%);
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 12px;
+  box-shadow: 0px 4px 11.9px 0px rgba(0, 0, 0, 0.10);
+  width: 97px;
+  height: 137px;
+  cursor: pointer;
+}
 
- section .checknow-card:hover{
-  background: var(--Primary, #30B4F5);
+section .checknow-card:hover{
+background: var(--Primary, #30B4F5);
 }
 
 .checknow-card .card-image{
-    max-width: 60%;
-    min-height: auto;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  max-width: 60%;
+  min-height: auto;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+}
+
+.checknow-card .checknow-title{
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.checknow-card .checknow-title:hover{
+  color: white;
+  margin: 0;
+}
+
+section.checknow-section .desc h1{
+  padding-top: 30px;
+  font-family: 'poppins', sans-serif;
+  font-weight: bold;
+  font-size: 24px;;
+  color: #093576;
+}
+
+.wrapper .card-fitur{
+  background: #fff;
+  width: 350px;
+  height: 90px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #00AEEF;
+  box-shadow: 0px 4px 11.9px 0px rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+}
+
+.wrapper .card-fitur:hover{
+  background: var(--Primary, #30B4F5);
+  transition: all 0.3s ease;
+}
+
+.card-fitur .content{
+  display: flex;
+  align-items: center;
+
+}
+
+.wrapper .card-fitur .img{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.card-fitur .img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-fitur .detail{
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+.detail span{
+  font-weight: 600;
+  font-size: 16px;
+}
+.detail p{
+  font-size: 12px;
+}
+@media screen and (max-width: 992px){ 
+  .checknow-section{
+      padding-top: 8rem;
+
+  }
+  .checknow-section img{
+      width: 400px;
+      display: block;
+      margin-inline: auto;
+  }
+  .checknow-section h1{
+    font-size: 3 rem;
+}
+
+}
+
+@media screen and (max-width: 575px){ 
+  .checknow-section h1{
+      font-size: 2.4rem;
   }
 
-  .checknow-card .checknow-title{
-    font-size: 12px;
-    font-weight: bold;
-    margin: 0;
+}
+
+@media screen and (max-width: 475px){ 
+  .checknow-section h1{
+      font-size: 2rem;
   }
 
-  .checknow-card .checknow-title:hover{
-    color: white;
-    margin: 0;
+  .checknow-section img{
+      width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px){ 
+  .checknow-section h1{
+      font-size: 1.4rem;
+  }
+  .checknow-section img{
+      width: 200px;
   }
 
-  section.checknow-section .desc h1{
-    padding-top: 30px;
-    font-family: 'poppins', sans-serif;
-    font-weight: bold;
-    font-size: 24px;;
-    color: #093576;
-  }
-
-  
-
-  @media screen and (max-width: 992px){ 
-    .checknow-section{
-        padding-top: 8rem;
-  
-    }
-    .checknow-section img{
-        width: 400px;
-        display: block;
-        margin-inline: auto;
-    }
-  }
-  
-  @media screen and (max-width: 575px){ 
-    .checknow-section h1{
-        font-size: 3rem;
-    }
-  
-  }
-  
-  @media screen and (max-width: 475px){ 
-    .checknow-section h1{
-        font-size: 2.4rem;
-    }
-  
-    .checknow-section img{
-        width: 300px;
-    }
-  }
-  
-  @media screen and (max-width: 375px){ 
-    .checknow-section h1{
-        font-size: 2rem;
-    }
-    .checknow-section img{
-        width: 200px;
-    }
-  
-  }
+}

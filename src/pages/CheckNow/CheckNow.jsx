@@ -1,25 +1,28 @@
 import React from "react";
-import CheckNowImg from "../../assets/img/Checknow.png";
-import { ArticleTerbaru } from "../../data/index";
-import { Container, Row, Col, Button, Card } from "react-bootstrap";
-import { BsChevronRight } from "react-icons/bs";
+import CheckNowHero from "../../assets/logofitur.json";
+import Lottie from "lottie-react";
+import { BsChevronDoubleRight } from "react-icons/bs";
+
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 import { useNavigate } from "react-router-dom";
 
 import "../../style/checknow.css";
 
-import FaqComponent from "../../components/FaqComponent";
-import CardComponent from "../../components/CardComponent";
+// import FaqComponent from "../../components/FaqComponent";
+// import CardComponent from "../../components/CardComponent";
 
 const CheckNow = () => {
   let naviget = useNavigate();
   return (
     <div>
-      <section className="checknow-section d-flex  align-items-center">
+      <section className="w-100 min-vh-100 d-flex overflow-hidden checknow-section">
         <Container>
           <Row className="checknow-box d-flex align-items-center">
             <Col lg="6" className="p-4">
-              <h1>Loyal companion in every journey of your life.</h1>
+              <h1 className="mt-5">
+                Loyal companion in every journey of your life.
+              </h1>
               <div className="checknow-card mt-4">
                 <img
                   className="card-image"
@@ -61,61 +64,54 @@ const CheckNow = () => {
                 <Button
                   variant="info"
                   size="lg"
-                  className="mt-4 btn-md text-light center"
+                  className="mt-4 btn-md text-light center rounded-2"
+                  onClick={() => naviget("/doctorcard")}
                 >
                   {" "}
                   Find Expert{" "}
                 </Button>
               </div>
+              <div className="wrapper mt-5">
+                <div className="card-fitur">
+                  <div className="content">
+                    <div className="img">
+                      <img
+                        src="https://media.istockphoto.com/id/489951194/id/vektor/pikiran-manusia-dengan-teka-teki-jigsaw.jpg?s=612x612&w=0&k=20&c=4QLFFW89dIH9rooXxPnDPbYsPaih9pHIOnGLNjSu0OU="
+                        alt=""
+                      />
+                    </div>
+                    <div className="detail">
+                      <span className="name">Pilih Psikolog</span>
+                      <p>
+                        If you need mental health assessment and counseling.
+                      </p>
+                    </div>
+                    <BsChevronDoubleRight />
+                  </div>
+                </div>
+              </div>
             </Col>
             <Col lg="6" className="pt-lg-0 pt-5 d-flex justify-content-end">
-              <img
+              <Lottie
                 className="checknow-img"
-                src={CheckNowImg}
+                animationData={CheckNowHero}
                 alt="checknow-image"
               />
             </Col>
           </Row>
         </Container>
       </section>
-      <section className="articles w-100 min-vh-100">
+      <section className="Docktor w-100 min-vh-100">
         <Container className="Articles">
           <Row className="pb-4">
             <Col>
-              <h2 className="text-center fw-bold">Artikel Terbaru</h2>
+              <h2 className="text-center fw-bold">Dokter</h2>
               <p className="text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloribus, nulla.
               </p>
             </Col>
           </Row>
-          <Row
-            xs={1}
-            md={2}
-            lg={4}
-            className="g-4 d-flex justify-content-start p-4"
-          >
-            {ArticleTerbaru.map((kelas) => {
-              return (
-                <CardComponent key={kelas.id} data={kelas}></CardComponent>
-              );
-            })}
-          </Row>
-          <Row className="mt-5">
-            <Col className="d-flex justify-content-center">
-              <Button
-                className="rounded-3 btn-lg text-light"
-                variant="info"
-                onClick={() => naviget("/articles")}
-              >
-                Baca Semua Article
-                <BsChevronRight className="ms-1" />
-              </Button>
-            </Col>
-          </Row>
-          {/* Faq Section */}
-          <FaqComponent />
-          {/* Faq Section */}
         </Container>
       </section>
     </div>
