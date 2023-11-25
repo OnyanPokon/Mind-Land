@@ -10,52 +10,50 @@ section.checknow-section .row h1{
   color: #093576;
 }
 
-section .checknow-card{
+.checknow-card-group {
   display: flex;
-  box-shadow: 5px 5px 5px hsl(0, 0%, 0% 10%);
-  margin: 10px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 12px;
+  flex-wrap: wrap;
+  gap: 20px; /* Jarak antar kartu */
+}
+
+.checknow-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: 0px 4px 11.9px 0px rgba(0, 0, 0, 0.10);
   width: 97px;
   height: 137px;
+  border-radius: 12px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-section .checknow-card:hover{
-background: var(--Primary, #30B4F5);
+.checknow-card:hover {
+  background: var(--Primary, #30B4F5);
 }
 
-.checknow-card .card-image{
-  max-width: 60%;
-  min-height: auto;
+.checknow-card .card-image {
+  width: 60%;
+  max-width: 70px;
+  height: auto;
   border-radius: 50%;
   margin-top: 20px;
   margin-bottom: 10px;
-  
 }
 
-.checknow-card .checknow-title{
+.checknow-card .checknow-title {
+  text-align: center;
   font-size: 12px;
   font-weight: bold;
   margin: 0;
+  transition: color 0.3s ease;
 }
 
-.checknow-card .checknow-title:hover{
+.checknow-card:hover .checknow-title {
   color: white;
-  margin: 0;
 }
 
-section.checknow-section .desc h1{
-  padding-top: 30px;
-  font-family: 'poppins', sans-serif;
-  font-weight: bold;
-  font-size: 24px;;
-  color: #093576;
-}
-
-.wrapper .card-fitur{
+.wrapper .card-fitur {
   background: #fff;
   width: 350px;
   height: 90px;
@@ -123,13 +121,35 @@ section.checknow-section .desc h1{
   .checknow-section h1{
     font-size: 3 rem;
 }
-
 }
 
 @media screen and (max-width: 575px){ 
   .checknow-section h1{
       font-size: 2.4rem;
   }
+  .checknow-card-group {
+    justify-content: center;
+  }
+  .checknow-card {
+    width: 80px; /* Mengurangi lebar kartu */
+    height: 110px; /* Mengurangi tinggi kartu */
+  }
+
+  .checknow-card .card-image {
+    max-width: 50px; /* Mengurangi ukuran gambar */
+    margin-top: 15px; /* Menyesuaikan margin gambar */
+    margin-bottom: 8px; /* Menyesuaikan margin gambar */
+  }
+
+  .checknow-card .checknow-title {
+    font-size: 12px; /* Mengurangi ukuran font judul */
+  }
+  .wrapper .card-fitur {
+    width: 100%; /* Lebar kartu mengisi keseluruhan lebar layar */
+    max-width: 350px; /* Maksimum lebar kartu untuk menjaga proporsi */
+    margin-bottom: 20px; /* Menambahkan jarak antar kartu */
+  }
+  
 
 }
 
@@ -141,6 +161,22 @@ section.checknow-section .desc h1{
   .checknow-section img{
       width: 300px;
   }
+  .checknow-card-group {
+    justify-content: center;
+  }
+  .checknow-card {
+    width: 60px; /* Mengurangi lebar kartu lebih lanjut */
+    height: 80px; /* Mengurangi tinggi kartu lebih lanjut */
+  }
+
+  .checknow-card .card-image {
+    max-width: 40px; /* Mengurangi ukuran gambar lebih kecil lagi */
+    margin-top: 10px; /* Menyesuaikan margin gambar */
+    margin-bottom: 5px; /* Menyesuaikan margin gambar */
+  }
+  .wrapper .card-fitur {
+    margin: 0 auto; /* Posisikan kartu ke tengah layar */
+  }
 }
 
 @media screen and (max-width: 375px){ 
@@ -149,6 +185,26 @@ section.checknow-section .desc h1{
   }
   .checknow-section img{
       width: 200px;
+  }
+  .checknow-card-group {
+    justify-content: center;
+  }
+  .checknow-card {
+    width: 50px; /* Mengurangi lebar kartu */
+    height: 70px; /* Mengurangi tinggi kartu */
+  }
+
+  .checknow-card .card-image {
+    max-width: 30px; /* Mengurangi ukuran gambar lebih kecil lagi */
+    margin-top: 8px; /* Menyesuaikan margin gambar */
+    margin-bottom: 4px; /* Menyesuaikan margin gambar */
+  }
+
+  .checknow-card .checknow-title {
+    font-size: 10px; /* Mengurangi ukuran font judul */
+  }
+  .wrapper .card-fitur {
+    margin: 0 auto; /* Posisikan kartu ke tengah layar */
   }
 
 }
