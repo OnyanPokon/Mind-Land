@@ -1,5 +1,4 @@
 import React from "react";
-import HorizontalCard from "../../components/HorizontalCard";
 import VerticalCard from "../../components/VerticalCard";
 
 const About = () => {
@@ -30,20 +29,6 @@ const About = () => {
                 <strong>TEAM</strong>
               </h1>
               <div className="py-5 d-flex flex-wrap align-items-center">
-                <HorizontalCard
-                  imgSrc="public/malik.png"
-                  title="Dr. Abdul Malik Matoha"
-                  subtitle="Spesalis Jomblo"
-                  description="Stress, Gangguan Kecemasan Berlebihan, Depresi"
-                  timeAvailability="Tersedia Kembali Sun, 08:00-10:00"
-                  buttonText="Lanjut Baca"
-                />
-                <VerticalCard
-                  image="public/malik.png"
-                  title="Heboh, Sekali tiupan anda tidak jomblo lagi acumalaka acumeleke"
-                  desc="dilansir dari acumalakapedia, tiupan ini sangat berbahaya dan mematikan karena dalam sekali tiupan jodoh anda langsung klepek-klepek acikiwir acukawar prikiriwir ahe ahe uhuyy"
-                  buttonText="Lanjut Baca"
-                />
               </div>
             </div>
           </div>
